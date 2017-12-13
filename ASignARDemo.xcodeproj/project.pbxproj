@@ -15,6 +15,8 @@
 		154B91911FDA2B6300B428E5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 154B91901FDA2B6300B428E5 /* main.m */; };
 		154B919B1FDA2B6300B428E5 /* ASignARDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 154B919A1FDA2B6300B428E5 /* ASignARDemoTests.m */; };
 		154B91A61FDA2B6500B428E5 /* ASignARDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 154B91A51FDA2B6500B428E5 /* ASignARDemoUITests.m */; };
+		154B91B51FDA2D0F00B428E5 /* ARSCNViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 154B91B41FDA2D0F00B428E5 /* ARSCNViewController.m */; };
+		154B91B91FDA331600B428E5 /* Models.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 154B91B81FDA331600B428E5 /* Models.scnassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,9 @@
 		154B91A11FDA2B6300B428E5 /* ASignARDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ASignARDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		154B91A51FDA2B6500B428E5 /* ASignARDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASignARDemoUITests.m; sourceTree = "<group>"; };
 		154B91A71FDA2B6500B428E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		154B91B31FDA2D0F00B428E5 /* ARSCNViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARSCNViewController.h; sourceTree = "<group>"; };
+		154B91B41FDA2D0F00B428E5 /* ARSCNViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARSCNViewController.m; sourceTree = "<group>"; };
+		154B91B81FDA331600B428E5 /* Models.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = Models.scnassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,8 +110,12 @@
 				154B91821FDA2B6100B428E5 /* AppDelegate.m */,
 				154B91841FDA2B6100B428E5 /* ViewController.h */,
 				154B91851FDA2B6100B428E5 /* ViewController.m */,
+				154B91B31FDA2D0F00B428E5 /* ARSCNViewController.h */,
+				154B91B41FDA2D0F00B428E5 /* ARSCNViewController.m */,
 				154B91871FDA2B6200B428E5 /* Main.storyboard */,
 				154B918A1FDA2B6200B428E5 /* Assets.xcassets */,
+				154B91B81FDA331600B428E5 /* Models.scnassets */,
+				154B91B71FDA31F600B428E5 /* New Group1 */,
 				154B918C1FDA2B6200B428E5 /* LaunchScreen.storyboard */,
 				154B918F1FDA2B6200B428E5 /* Info.plist */,
 				154B91901FDA2B6300B428E5 /* main.m */,
@@ -130,6 +139,21 @@
 				154B91A71FDA2B6500B428E5 /* Info.plist */,
 			);
 			path = ASignARDemoUITests;
+			sourceTree = "<group>";
+		};
+		154B91B61FDA31EC00B428E5 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "New Group";
+			sourceTree = "<group>";
+		};
+		154B91B71FDA31F600B428E5 /* New Group1 */ = {
+			isa = PBXGroup;
+			children = (
+				154B91B61FDA31EC00B428E5 /* New Group */,
+			);
+			name = "New Group1";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,7 +223,7 @@
 				TargetAttributes = {
 					154B917D1FDA2B6100B428E5 = {
 						CreatedOnToolsVersion = 9.0;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					154B91951FDA2B6300B428E5 = {
 						CreatedOnToolsVersion = 9.0;
@@ -239,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				154B918E1FDA2B6200B428E5 /* LaunchScreen.storyboard in Resources */,
+				154B91B91FDA331600B428E5 /* Models.scnassets in Resources */,
 				154B918B1FDA2B6200B428E5 /* Assets.xcassets in Resources */,
 				154B91891FDA2B6200B428E5 /* Main.storyboard in Resources */,
 			);
@@ -267,6 +292,7 @@
 			files = (
 				154B91861FDA2B6100B428E5 /* ViewController.m in Sources */,
 				154B91911FDA2B6300B428E5 /* main.m in Sources */,
+				154B91B51FDA2D0F00B428E5 /* ARSCNViewController.m in Sources */,
 				154B91831FDA2B6100B428E5 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -430,11 +456,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = B8UGM3N3WR;
 				INFOPLIST_FILE = ASignARDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.beicheng.ar.ASignARDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.beicheng.ar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "2adbb5cf-602a-4b32-9434-f5442e91c0ee";
+				PROVISIONING_PROFILE_SPECIFIER = beichengAR;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -443,11 +472,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = B8UGM3N3WR;
 				INFOPLIST_FILE = ASignARDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.beicheng.ar.ASignARDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.beicheng.ar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "2adbb5cf-602a-4b32-9434-f5442e91c0ee";
+				PROVISIONING_PROFILE_SPECIFIER = beichengAR;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
